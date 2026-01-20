@@ -59,5 +59,7 @@ Project Structure
 
 How to Run
 pip install sqlalchemy
+
 python seed_data.py   # optional: populate database with sample data 
+
 python main.py
