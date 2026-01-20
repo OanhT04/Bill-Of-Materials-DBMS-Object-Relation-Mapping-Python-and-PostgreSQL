@@ -1,17 +1,15 @@
 # Bill-Of-Materials-DBMS-Object-Relation-Mapping-Python-and-PostgreSQL
 
-Bill of Materials (BOM) Management System
+Bill of Materials (BOM) Management System:
+A Python-based application built with SQLAlchemy ORM and PostgreSQL that simulates a real-world BOM and inventory structure. The system models hierarchical assemblies, vendor-supplied components, and usage constraints, reflecting how manufacturing systems manage, validate, and maintain structured production data.
 
-Step 1: System Design (UML and ERD)
-- Created a UML class diagram to model the object-oriented structure of the system
-  - Identified core classes (Part, AssemblyPart, PiecePart, Vendor, Usage) and their general relationships, multiplicities and cardinality
+Planning: System Design (UML and ERD) - Started with focusing on understanding general business rules and relationship requirements
+- Created a UML class diagram and class/attribute definition sheet to model the object-oriented structure of the system
+  - Identified core classes (Part, AssemblyPart, PiecePart, Vendor, Usage) and their general relationships, multiplicities and cardinality (excludes implementation detail)
     <img width="1701" height="1167" alt="image" src="https://github.com/user-attachments/assets/b5f20f10-ece9-45f5-bdd1-604bc457160c" />
-- Designed an Entity Relationship Diagram (ERD) to model the relational database schema including migrated keys, check, relationships, index, and unique key constraints accordingly to business rule criteria
-
-A Python-based Bill of Materials (BOM) Management System built using SQLAlchemy ORM and SQLite.
+- Designed an interactive Entity Relationship Diagram (ERD) to model the relational database schema including migrated keys, check, relationships, index, and unique key constraints to display and model db criteria given
 <img width="1021" height="644" alt="BOM-2026-01-19_16-27" src="https://github.com/user-attachments/assets/2fc7ccf2-a246-4f96-8b4e-820505edf55b" />
 
-The application models manufacturing data, supporting hierarchical assemblies, component relationships, and strict data integrity rules through a command-line interface.
 
 Project Overview
 This project provides a structured way to manage:
@@ -55,13 +53,13 @@ Project Structure
 
 ├── db_connection.py   # Database engine and session setup
 
-├── seed_data.py       # Sample data population
+├── data.py       # Sample data population
 
-├── bom_simple.db      # SQLite database file
+├── bom_simple.db      # Seeded database file
 
-How to Run
-pip install sqlalchemy
+How to Run!
 
-python seed_data.py   # optional: populate database with sample data 
-
+connect to db -> modify db_connection.py 
+pip install sqlalchemy #download sqlalchemy
+python data.py   # optional: delete bom_simple.db and run this command to restart + populate database with sample data 
 python main.py
