@@ -87,7 +87,7 @@ python main.py
 
 
 
-# Takeaways from Object Relation Mapping Design and it's Significancein a Business context
+# Takeaways from Object Relation Mapping Design and it's Significance in a Business context
 - Developers can focus on business logic rather than writing and optimizing SQL queries, due to features like automatic CRUD operations and schema generation.
 - User interface: Guides users through safe workflows with menu options to ensure users can only perform valid actions in the correct order. Python application rejects invalid data before attempting to commit to database; reducing errors and confusion (updating employee record, inserting a part, viewing data, etc). 
 -  Instead of cryptic SQL error messages, users receive understandable business rule violation error messages when operation is rejected. Relationships like “an assembly must reference valid components” or “a vendor cannot be deleted if it is still in use” are enforced by the application.
