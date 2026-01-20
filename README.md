@@ -5,7 +5,7 @@ Bill of Materials (BOM) Management System: Relational Database design -> Object 
 
 A Python-based application built with SQLAlchemy ORM and PostgreSQL that simulates a BOM and inventory structure: models hierarchical assemblies, vendor-supplied components, and usage constraints, reflecting how manufacturing systems can manage, validate, and maintain structured production data! 
 
-This project provides a simple interface and structured way to manage data:
+This project provides a simple interface and structured way to manage data while maintaining data/referential integrity and adherance to business rules:
 - Vendors
 - Parts (assembly parts and piece parts)
 - Usage relationships between assemblies and components
@@ -39,7 +39,7 @@ Designed an interactive/shareable Entity Relationship Diagram (ERD) to model the
 
 
   
-# Enforced data integrity through User Interface: data and input validated before reaching db
+# Considerations
 - Primary key and unique constraints
 - Foreign key relationships
 - Check constraints + application-level validations with error diagnosis
