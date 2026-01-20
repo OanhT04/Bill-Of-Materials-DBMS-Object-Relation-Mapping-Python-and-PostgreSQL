@@ -12,26 +12,27 @@ This project provides a simple interface and structured way to manage data while
 
 
 
-# Planning: System Design : UML and ERD 
+# Planning: Simple System Design : UML and ERD 
 I started with focusing on understanding general business rules and relationship requirements!
 Created a UML class diagram and class/attribute definition sheet to model the object-oriented structure of the system (ignoring implementation details)
-    <img width="1701" height="1167" alt="image" src="https://github.com/user-attachments/assets/b5f20f10-ece9-45f5-bdd1-604bc457160c" />
+<img width="1701" height="1167" alt="image" src="https://github.com/user-attachments/assets/b5f20f10-ece9-45f5-bdd1-604bc457160c" />
 Designed an interactive/shareable Entity Relationship Diagram (ERD) to model the relational database schema including migrated keys, check, relationships, index, and unique key constraints to display and model db criteria given
 <img width="1021" height="644" alt="BOM-2026-01-19_16-27" src="https://github.com/user-attachments/assets/2fc7ccf2-a246-4f96-8b4e-820505edf55b" />
 
 
 
 
-# Object Relation Mapping with SQLAlchemy library features: 
+# Object Relation Mapping with SQLAlchemy features: 
 
 - Relational database schema and ERD design is implemented with SQLAlchemy 
 -  complete CRUD (CREATE, READ, UPDATE, DELETE) functionality while preserving referential integrity through constraint checks and validators.
     - Automated :
-       • Database connection management
-      
-      • table creation from ORM models and CRUD/software instructs database (reducing the need for mnual and repetitive SQL inputs)
 
-       • Transaction handling (commit / rollback) -> ORM syncs operations to DB
+          • Database connection management
+      
+          • table creation from ORM models and CRUD operations
+
+          • Transaction handling (commit / rollback) -> ORM syncs operations to DB
 - Includes sample data to model CRUD functions on Motorcycle Parts, Vendors and Usages
 - Recursive traversal of assembly hierarchies to display the hierarchy of parts from sample data
 
@@ -73,9 +74,10 @@ Project Structure
 
 ├── bom_simple.db      # Seeded database file
 
+
 # How to Run!
 
-connect to db -> modify db_connection.py 
+modify db_connection.py to connect to postgreSQL or RDBMS of choice
 
 pip install sqlalchemy #download sqlalchemy
 
