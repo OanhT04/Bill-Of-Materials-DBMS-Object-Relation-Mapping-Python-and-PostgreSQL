@@ -12,8 +12,6 @@ This project provides a simple interface and structured way to manage data:
 - It allows a user to create, view, update, and delete parts, assemblies, vendors, and their relationships while enforcing data correctness through both Python logic and database constraints.
 
 
-Overview:
-UML → ERD → DDL → Python ORM → Validated CRUD Operations and easy to navigate User Interface
 
 Planning: System Design (UML and ERD) - I started with focusing on understanding general business rules and relationship requirements!
 - Created a UML class diagram and class/attribute definition sheet to model the object-oriented structure of the system
@@ -32,22 +30,10 @@ Object Relation Mapping with SQLAlchemy library features: -  ORM.py defines the 
         • Database connection management
         • table creation from ORM models and CRUD/software instructs database (reducing the need for mnual and repetitive SQL inputs)
         • Transaction handling (commit / rollback) -> ORM syncs operations to DB
-        • Foreign key and relationship enforcement on application level -> allows for simpler and readable error handling with invalid data input or operations
-        • Session lifecycle and connection pooling
-        • Bulk data seeding through the seed script
 - Includes sample data to model CRUD functions on Motorcycle Parts, Vendors and Usages
 - Recursive traversal of assembly hierarchies to display the hierarchy of parts from sample data
 
 
-Takeaways from Object Relation Mapping Design and it's Significance for managing data and automating DML in a Business context
-- Hides database complexity: Developers can focus on business logic rather than writing and optimizing SQL queries, due to features like automatic CRUD operations and schema generation.
-- User interface: Guides users through safe workflows with menu options to ensure users can only perform valid actions in the correct order. Python application rejects invalid data before attempting to commit to database; reducing errors and confusion (updating employee record, inserting a part, viewing data, etc). 
--  Instead of cryptic SQL error messages, users receive understandable business rule violation error messages when operation is rejected. Relationships like “an assembly must reference valid components” or “a vendor cannot be deleted if it is still in use” are enforced by the application.
-- Changes to the database schema or business logic can often be managed and rewritten within the ORM layer, reducing the risk of breaking the application; and it is flexible across multiple RDBMS
-
-• Improves trust in data: When data integrity is enforced automatically, stakeholders can rely on the system for planning, inventory management, and analysis.
-
-• Allows focus on decisions, not mechanics: Users spend time managing components and assemblies rather than worrying about how data is stored or related.
 
   
 Enforced data integrity through User Interface:
@@ -95,6 +81,17 @@ pip install sqlalchemy #download sqlalchemy
 python data.py   # optional: delete bom_simple.db and run this command to restart + populate database with sample data 
 python main.py
 
+Takeaways from Object Relation Mapping Design and it's Significance for managing data and automating DML in a Business context
+
+-Developers can focus on business logic rather than writing and optimizing SQL queries, due to features like automatic CRUD operations and schema generation.
+- User interface: Guides users through safe workflows with menu options to ensure users can only perform valid actions in the correct order. Python application rejects invalid data before attempting to commit to database; reducing errors and confusion (updating employee record, inserting a part, viewing data, etc). 
+-  Instead of cryptic SQL error messages, users receive understandable business rule violation error messages when operation is rejected. Relationships like “an assembly must reference valid components” or “a vendor cannot be deleted if it is still in use” are enforced by the application.
+- Changes to the database schema or business logic can often be managed and rewritten within the ORM layer, reducing the risk of breaking the application; and it is flexible across multiple RDBMS
+
+• Improves trust in data: When data integrity is enforced automatically, stakeholders can rely on the system for planning, inventory management, and analysis.
+
+• Allows focus on decisions, not mechanics: Users spend time managing components and assemblies rather than worrying about how data is stored or related.
 
 Future Modifications:
+- adding to transaction management 
 
