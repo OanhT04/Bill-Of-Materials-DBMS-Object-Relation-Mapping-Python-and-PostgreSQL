@@ -39,7 +39,7 @@ Designed an interactive/shareable Entity Relationship Diagram (ERD) to model the
 
 
   
-# User Interface Communicates 
+# ORM -> User Interface Communicates 
 - Primary key and unique constraints
 - Foreign key relationships
 - Check constraints + application-level validations with error diagnosis
