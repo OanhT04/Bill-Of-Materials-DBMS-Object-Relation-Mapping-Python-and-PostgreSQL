@@ -15,9 +15,9 @@ This project provides a simple interface and structured way to manage data:
 
 # Planning: System Design : UML and ERD 
 I started with focusing on understanding general business rules and relationship requirements!
-Created a UML class diagram and class/attribute definition sheet to model the object-oriented structure of the system
+Created a UML class diagram and class/attribute definition sheet to model the object-oriented structure of the system (ignoring implementation details)
     <img width="1701" height="1167" alt="image" src="https://github.com/user-attachments/assets/b5f20f10-ece9-45f5-bdd1-604bc457160c" />
-Designed an interactive Entity Relationship Diagram (ERD) to model the relational database schema including migrated keys, check, relationships, index, and unique key constraints to display and model db criteria given
+Designed an interactive/shareable Entity Relationship Diagram (ERD) to model the relational database schema including migrated keys, check, relationships, index, and unique key constraints to display and model db criteria given
 <img width="1021" height="644" alt="BOM-2026-01-19_16-27" src="https://github.com/user-attachments/assets/2fc7ccf2-a246-4f96-8b4e-820505edf55b" />
 
 
