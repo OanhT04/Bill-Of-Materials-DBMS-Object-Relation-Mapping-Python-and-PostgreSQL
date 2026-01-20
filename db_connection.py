@@ -3,6 +3,18 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from ORM import Base
 
-engine=create_engine("sqlite:///bom_simple.db")
-Session=sessionmaker(bind=engine)
-Base.metadata.create_all(engine)
+DATABASE_URL = "postgresql+psycopg2://myuser:mypassword@localhost:5432/bom_simple"
+
+engine = create_engine(
+    DATABASE_URL,
+    pool_pre_ping=True,
+)
+
+Session = sessionmaker(
+    bind=engine,
+    autocommit=False,
+    autoflush=False,
+)
+
+# Create tables
+Base.metadata.create_all(bind=engine)
