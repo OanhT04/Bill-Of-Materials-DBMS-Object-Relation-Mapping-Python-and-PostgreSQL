@@ -1,15 +1,14 @@
 # Bill-Of-Materials-DBMS-Object-Relation-Mapping-Python-and-PostgreSQL
 
-Bill of Materials (BOM) Management System: Database Fundamentals Project -> Relational Database design -> Object Relation Mapping + automating database operations; 
-This is a project I built off of from a class assignment in my database fundamentals course; to learn how OOP paradigm can be bridged with Database design concepts learnt in the course!
+Bill of Materials (BOM) Management System: Relational Database design -> Object Relation Mapping + automating database operations; 
 
-A Python-based application built with SQLAlchemy ORM and PostgreSQL that simulates a BOM and inventory structure. The system models hierarchical assemblies, vendor-supplied components, and usage constraints, reflecting how manufacturing systems manage, validate, and maintain structured production data! 
+
+A Python-based application built with SQLAlchemy ORM and PostgreSQL that simulates a BOM and inventory structure: models hierarchical assemblies, vendor-supplied components, and usage constraints, reflecting how manufacturing systems can manage, validate, and maintain structured production data! 
 
 This project provides a simple interface and structured way to manage data:
 - Vendors
 - Parts (assembly parts and piece parts)
 - Usage relationships between assemblies and components
-- It demonstrates how relational databases handle hierarchical data, foreign key relationships, and constraint enforcement in a realistic domain.
 - It allows a user to create, view, update, and delete parts, assemblies, vendors, and their relationships while enforcing data correctness through both Python logic and database constraints.
 
 
