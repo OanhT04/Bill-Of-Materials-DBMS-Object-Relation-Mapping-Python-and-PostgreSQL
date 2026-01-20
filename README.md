@@ -12,7 +12,7 @@ This project provides a simple interface and structured way to manage data while
 
 
 
-# Planning: Simple System Design : UML and ERD 
+# Simple System Design : UML and ERD 
 I started with focusing on understanding general business rules and relationship requirements!
 Created a UML class diagram and class/attribute definition sheet to model the object-oriented structure of the system (ignoring implementation details)
 <img width="1701" height="1167" alt="image" src="https://github.com/user-attachments/assets/b5f20f10-ece9-45f5-bdd1-604bc457160c" />
