@@ -39,7 +39,7 @@ Designed an interactive/shareable Entity Relationship Diagram (ERD) to model the
 
 
   
-# Considerations
+# User Interface Communicates 
 - Primary key and unique constraints
 - Foreign key relationships
 - Check constraints + application-level validations with error diagnosis
@@ -48,7 +48,6 @@ Designed an interactive/shareable Entity Relationship Diagram (ERD) to model the
 - Preloaded seed data for demonstration and testing
 - better communication with user; alongside diagnosing invalid inputs/operations or non-existent data when querying; the UI allows the user to retry entries for an rejected operation or cancel the operation entirely
   
-
 
 Tech Stack
 - Python 3 
